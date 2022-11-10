@@ -131,6 +131,9 @@ address {
 
 /* студія main */
 .hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-image:linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), 
@@ -189,7 +192,10 @@ address {
     margin-left: 30px;
 }
 .about-list-box {
-    padding: 25px 100px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F5F4FA;
     margin-bottom: 30px;
 }
@@ -203,6 +209,7 @@ address {
     color: var(--secondary-txt-color);
     line-height: 2;
 }
+
 .work.section {
     padding-top: 0;
 }
@@ -214,6 +221,7 @@ address {
     display: flex;
     justify-content: space-between;
 }
+
 .team {
     background-color: var(--team-bg-color);
 }
@@ -261,8 +269,8 @@ address {
     height: 44px;
 }
 .social-list-link {
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
     background-color: var(--primary-bg-color);
     border-radius: 50%;
     display: flex;
@@ -272,14 +280,15 @@ address {
 .social-list-icon {
     fill: var(--icon-color)
 }
-.social-list-link:hover .social-list-icon, 
-.social-list-link:focus .social-list-icon {
-    fill: var(--primary-bg-color);
-}
 .social-list-link:hover, 
 .social-list-link:focus {
     background-color: var(--accent-color);
 }
+.social-list-link:hover .social-list-icon, 
+.social-list-link:focus .social-list-icon {
+    fill: var(--primary-bg-color);
+}
+
 .clients {
     background-color: var(--primary-bg-color);
 }
@@ -293,7 +302,7 @@ address {
 .clients-list {
     display: flex;
 }
-.client-list-item {
+.clients-list-item {
     width: 170px;
     height: 92px;
 }
@@ -301,12 +310,13 @@ address {
     margin-right: 30px;
 }
 .clients-list-link {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    padding: 16px 31px;
 }
 .clients-list-icon {
     fill: #AFB1B8;
@@ -339,13 +349,11 @@ address {
     padding: 8px 20px;
     border: none;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 .port-btn:hover, .port-btn:focus {
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .port-btn-list {
     display: flex;
@@ -368,11 +376,10 @@ address {
     margin-top: 30px;
 }
 .port-list-link {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: block;
 }
 .port-list-link:hover, .port-list-link:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .port-list-box {
     padding: 20px 24px;
@@ -395,12 +402,11 @@ address {
 /* footer */
 .foot {
     background-color: var(--secondary-bg-color);
+    padding: 60px 0;
 }
 .foot .container {
     display: flex;
     align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 .foot-logo {
     color: var(--primary-bg-color);
@@ -421,13 +427,14 @@ address {
 .foot-social-box {
     margin-left: 70px;
 }
-.foot-title {
+.foot-text {
     color: var(--primary-bg-color);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .foot-social-list {
     display: flex;
